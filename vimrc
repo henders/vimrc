@@ -216,6 +216,8 @@ if !has("gui_running")
    nmap OD h
 endif
 
+" --- NerdTree
+nmap <leader>, :NERDTree<CR>
 
 " --- Command-T
 let g:CommandTMaxHeight = 15

@@ -214,6 +214,8 @@ if !has("gui_running")
    nmap OB j
    nmap OC l
    nmap OD h
+else
+    let macvim_hig_shift_movement = 1
 endif
 
 " --- NerdTree
@@ -226,11 +228,6 @@ let g:CommandTMaxHeight = 15
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
 let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
-
-" --- EasyMotion
-"let g:EasyMotion_leader_key = '<Leader>m' " default is <Leader>w
-hi link EasyMotionTarget ErrorMsg
-hi link EasyMotionShade  Comment
 
 " --- TagBar
 " toggle TagBar with F7
